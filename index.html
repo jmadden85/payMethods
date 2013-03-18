@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <div class="payMethod colWrapper">
+
+        <h3>Tuition</h3>
+
+        <div class="colOne">
+          <!-- Top Section -->
+          <div class="nextPayment">
+
+            <h3>Next Due Payment</h3>
+
+            <span class="installment">Installment #9</span>
+            <span class="dueDate">Tuesday September 1st 2013</span>
+            <span class="amountDue">$199.00</span>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
+                <i class=" icon-caret-down"></i> Defer Payment
+              </a>
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+              </ul>
+            </div>
+
+            <div class="buttonWrap">
+              <button class="btn btn-large btn-success">Pay Now <i class="icon-ok"></i></button>
+              <span class="small payWith">using VISA *4486</span>
+            </div>
+
+          </div>
+
+          <!-- Bottom Section-->
+          <div class="accountSummary">
+
+            <h3>Account Summary</h3>
+
+            <label for="thisCourse">Course: </label>
+
+            <select id="thisCourse">
+              <option value="this">this</option>
+              <option value="that">that</option>
+              <option value="other">other</option>
+            </select>
+
+            <ul class="balance">
+
+              <li class="bg">
+                <span class="left">Tuition:</span>
+                <span class="right">$4995.00</span>
+              </li>
+
+              <li class="bg">
+                <span class="left">Fees:</span>
+                <span class="right">$1,231.00</span>
+              </li>
+
+              <li class="border">
+                <span class="left">Less Scholarships:</span>
+                <span class="right deduction">($500.00)</span>
+              </li>
+
+              <li>
+                <span class="left">Net Tuition:</span>
+                <span class="right">$5726.00</span>
+              </li>
+
+              <li class="border">
+                <span class="left">Less total payments made:</span>
+                <span class="right deduction">($1492.00)</span>
+              </li>
+
+              <li>
+                <span class="left">Remaining tuition balance:</span>
+                <span class="right">$4234.00</span>
+              </li>
+
+              <li>
+                <span class="left">Past due payments:</span>
+                <span class="right">$0.00</span>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-large">Print <i class="icon-print"></i></button>
+            <small>account statement</small>
+
+          </div>
+
+        </div>
+
+        <div class="colTwo">
+
+          <!-- Top Section -->
+          <div class="autoPay">
+
+            <h3>Auto Pay</h3>
+
+            <ul class="payMethodsOnRecord">
+
+              <li class="headers">
+                <h4>PaymentType</h4>
+                <h4>Expires</h4>
+                <h4>Primary</h4>
+                <h4>Settings</h4>
+              </li>
+
+              <li class="savedMethod">
+                <span class="type">*4486</span>
+                <span class="expires">10/15</span>
+                <span class="primary"><i class="icon-ok"></i></span>
+                <div class="btn-group">
+                  <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
+                    <i class=" icon-caret-down"></i>
+                    <i class="icon-cog"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- dropdown menu links -->
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
+                <i class=" icon-caret-down"></i> Show All
+              </a>
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+              </ul>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
+                <i class=" icon-caret-down"></i> Add New
+              </a>
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Bottom Section -->
+          <div class="previousPay">
+
+            <h3>Previous Payments</h3>
+
+            <p class="installmentNum">Installment #9</p>
+            <p class="installmentDue">Tuesday August 31st 2012</p>
+            <p class="installmentAmount">$199.00</p>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
+                <i class=" icon-caret-down"></i> Show All
+              </a>
+              <ul class="dropdown-menu">
+                <!-- dropdown menu links -->
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
