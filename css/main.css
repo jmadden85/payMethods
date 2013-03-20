@@ -2599,6 +2599,10 @@ td .btn
   float:left;
 }
 
+/**********************************************************************
+  Common Styles
+**********************************************************************/
+
 .payMethod h3 {
   font-weight:normal;
   margin:15px 0;
@@ -2609,6 +2613,20 @@ td .btn
   margin:15px 0 10px;
 }
 
+.payMethod .btn {
+  font-weight:bold;
+  font-size:12px;
+  color:#fff;
+}
+
+.payMethod .toggler i {
+  margin:0 5px 0 0;
+}
+
+/**********************************************************************
+  Next Due Payment
+**********************************************************************/
+
 .nextPayment span {
   font-size:14px;
   font-weight:bold;
@@ -2616,11 +2634,11 @@ td .btn
   margin:5px 0;
 }
 
-.nextPayment .buttonWrap, .nextPayment .btn-group {
+.nextPayment .buttonWrap, .nextPayment .btn {
   float:left;
 }
 
-.nextPayment .btn-group {
+.nextPayment .defer {
   margin:0 5px 0 24px;
 }
 
@@ -2628,23 +2646,13 @@ td .btn
   text-align:right;
 }
 
-.payMethod .btn-group a, .payMethod .btn {
-  font-weight:bold;
-  font-size:12px;
-  color:#333;
-}
-
-.payMethod .btn-group i {
-  margin:0 5px 0 0;
-}
-
 .nextPayment .btn-success i {
   font-size:18px;
   margin:0 0 0 5px;
 }
 
-.payMethod .btn {
-  color:#fff;
+.payMethod .toggler {
+  color:#333;
 }
 
 .payMethod .btn-group a i {
@@ -2654,4 +2662,8 @@ td .btn
 .payMethod .small {
   color:#797979;
   font-size:10px;
+}
+
+.payMethod .amountDue {
+  margin-bottom:20px;
 }
