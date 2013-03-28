@@ -34,6 +34,8 @@
               <span class="small payWith">using VISA *4486</span>
             </div>
 
+            <div class="clear"></div>
+
           </div>
 
           <!-- Bottom Section-->
@@ -88,7 +90,7 @@
 
             </ul>
 
-            <button class="btn btn-large">Print <i class="icon-print"></i></button>
+            <button class="btn btn-large"> <i class="icon-print"></i> Print</button>
             <small>account statement</small>
 
           </div>
@@ -105,16 +107,17 @@
             <ul class="payMethodsOnRecord">
 
               <li class="headers">
-                <h4>PaymentType</h4>
+                <h4>Payment Type</h4>
                 <h4>Expires</h4>
                 <h4>Primary</h4>
-                <h4>Settings</h4>
+                <h4 class="last">Settings</h4>
               </li>
 
               <li class="savedMethod">
-                <span class="type">*4486</span>
-                <span class="expires">10/15</span>
-                <span class="primary"><i class="icon-ok"></i></span>
+                <div class="card visa active"></div>
+                <div class="last4">*4486</div>
+                <div class="expires">10/15</div>
+                <div class="primary"><i class="icon-ok"></i></div>
                 <div class="btn-group">
                   <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
                     <i class=" icon-caret-down"></i>
@@ -128,22 +131,19 @@
 
             </ul>
 
-            <div class="btn-group">
-              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
-                <i class=" icon-caret-down"></i> Show All
-              </a>
-              <ul class="dropdown-menu">
-                <!-- dropdown menu links -->
-              </ul>
-            </div>
+            <div class="buttonWrap">
 
-            <div class="btn-group">
-              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
-                <i class=" icon-caret-down"></i> Add New
-              </a>
-              <ul class="dropdown-menu">
-                <!-- dropdown menu links -->
-              </ul>
+              <button class="btn btn-large btn showAllSavedPaymentMethods toggler"><i class="icon-caret-down"></i> Show All</button>
+
+              <div class="btn-group">
+                <a class="btn dropdown-toggle btn-large btn-success" data-toggle="dropdown" href="#">
+                  <i class=" icon-caret-down"></i> Add New
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- dropdown menu links -->
+                </ul>
+              </div>
+
             </div>
 
           </div>
@@ -157,14 +157,7 @@
             <p class="installmentDue">Tuesday August 31st 2012</p>
             <p class="installmentAmount">$199.00</p>
 
-            <div class="btn-group">
-              <a class="btn dropdown-toggle btn-large" data-toggle="dropdown" href="#">
-                <i class=" icon-caret-down"></i> Show All
-              </a>
-              <ul class="dropdown-menu">
-                <!-- dropdown menu links -->
-              </ul>
-            </div>
+            <button class="btn btn-large showAllPayments toggler"><i class="icon-caret-down"></i> Show All</button>
 
           </div>
 
@@ -174,6 +167,18 @@
 
     </div>
 
+<!--     <div class="card large visa"></div>
+    <div class="card small visa"></div>
+
+    <div class="card large american"></div>
+    <div class="card small american"></div>
+
+    <div class="card large discover"></div>
+    <div class="card small discover"></div>
+
+    <div class="card large master"></div>
+    <div class="card small master"></div>
+ -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

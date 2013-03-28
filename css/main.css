@@ -2602,6 +2602,9 @@ td .btn
 /**********************************************************************
   Common Styles
 **********************************************************************/
+.clear {
+  clear:both;
+}
 
 .payMethod h3 {
   font-weight:normal;
@@ -2611,6 +2614,10 @@ td .btn
 .payMethod .colOne h3, .payMethod .colTwo h3 {
   font-weight:bold;
   margin:15px 0 10px;
+}
+
+.colOne .accountSummary h3, .colTwo .previousPay h3 {
+  margin:25px 0 20px;
 }
 
 .payMethod .btn {
@@ -2626,6 +2633,11 @@ td .btn
 /**********************************************************************
   Next Due Payment
 **********************************************************************/
+
+.nextPayment {
+  padding:0 0 15px 0;
+  border-bottom:1px dotted #ccc;
+}
 
 .nextPayment span {
   font-size:14px;
@@ -2662,8 +2674,188 @@ td .btn
 .payMethod .small {
   color:#797979;
   font-size:10px;
+  font-weight:normal;
 }
 
 .payMethod .amountDue {
   margin-bottom:20px;
+}
+
+/**********************************************************************
+  Account Summary
+**********************************************************************/
+
+.accountSummary li {
+  width:310px;
+  clear:both;
+  height:20px;
+  padding:10px;
+  font-size:14px;
+}
+
+.accountSummary .btn {
+  margin:10px 0 0 24px;
+}
+
+.accountSummary li .left {
+  float:left;
+}
+
+.accountSummary li .right {
+  font-weight:bold;
+  float:right;
+}
+
+.accountSummary li .deduction {
+  color:#e31b23;
+}
+
+.accountSummary .border {
+  border-bottom:1px dotted #ccc;
+}
+
+#thisCourse {
+  width:70%;
+  margin:5px 0 10px 0;
+}
+
+.accountSummary .bg {
+  background-color:#f5f9ff;
+}
+
+.accountSummary .btn {
+  color:#333;
+  font-size:14px;
+}
+
+.accountSummary .btn i {
+  color:#999;
+  margin:0 5px 0 0;
+}
+
+/**********************************************************************
+  Previous Payments
+**********************************************************************/
+
+
+/**********************************************************************
+  Auto Pay
+**********************************************************************/
+
+.autoPay {
+  height:222px;
+  border-bottom:1px dotted #ccc;
+}
+
+.payMethodsOnRecord .headers {
+  margin:0 0 15px 0;
+  height:15px;
+}
+
+.payMethodsOnRecord .headers h4, .savedMethod div {
+  float:left;
+  font-size:12px;
+  margin:0 48px 0 0;
+}
+
+.payMethodsOnRecord .headers .last {
+  margin:0;
+}
+
+.savedMethod {
+  clear:both;
+}
+
+.savedMethod .card {
+  margin:0 8px 0 0;
+}
+
+.savedMethod .last4 {
+  margin:6px 44px 0 0;
+}
+
+.savedMethod .expires {
+  margin:6px 56px 0 0;
+}
+
+.savedMethod .primary {
+  font-size:32px;
+  margin:3px 50px 0 0;
+  color:#ccc;
+}
+
+.savedMethod .btn-group {
+  margin:0;
+}
+
+.savedMethod .btn-group a {
+  padding:7px 14px;
+}
+
+.savedMethod .btn-group .dropdown-toggle i {
+  color:#333;
+  font-size:20px;
+}
+
+.savedMethod .btn-group .dropdown-toggle .icon-caret-down {
+  color:#999;
+  font-size:12px;
+  margin:0 5px 0 0;
+  }
+
+  .autoPay .btn-group .btn-success .icon-caret-down {
+  color:#fff;
+  }
+
+  .autoPay .buttonWrap {
+    margin:20px 0 0 0;
+    float:right;
+  }
+
+/**********************************************************************
+  Credit Card Sprite
+**********************************************************************/
+
+.card {
+  background:url('../img/cardSprite.png') 0 0 no-repeat transparent;
+  height:32px;
+  width:50px;
+  opacity:.3;
+}
+
+.card.active {
+  opacity:1;
+}
+
+div.small {
+  height:21px;
+  width:32px;
+}
+
+.visa {
+  background-position:0 -94px;
+}
+
+.visa.small {
+  background-position: 0 -140px;
+}
+
+.american {
+  background-position:0 -307px;
+}
+
+.american.small {
+  background-position: 0 -348px;
+}
+
+.discover {
+  background-position:0 -205px;
+}
+
+.discover.small {
+  background-position:0 -246px;
+}
+
+.master.small {
+  background-position:0 -40px;
 }
